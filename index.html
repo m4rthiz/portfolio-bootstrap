@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Josefin+Slab|Oregano|Poiret+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
+
+        <!--NAVIGATION------------------------->
+        <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+                    <a href="#" class="navbar-brand">[m4r]</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#reseaux">Reseaux</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+       
+        <!--SECTION HOME-------------------------->
+
+        <div class="row" id="home">
+            <h1 class="title-section">[m4r]</h1>
+            <div class="row">
+                <p> une web-developpeuse en devenir !</p>
+            </div>
+
+            <!--SCROLL ICON------------->
+            <div class="row">
+                <div class="col-xs-12 center-block text-center">
+                    <a href="#portfolio"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--SECTION PORTFOLIO--------->
+
+        <div class="row" id="portfolio">
+            <h1 class="title-section-2">[Portfolio]</h1>
+            <div class="container ">
+                <div class="row article">
+                    <div class="col-sm-5 text-center">
+                        <h2>Compagnie Kotekan</h2>
+                        <p class="p-section-2">Site de la compagnie Kotekan :<br/> gamelan, musique collective.</p>
+                        <a class="btn btn-rounded " href="http://www.kotekan.fr" role="button">View Project</a>
+                    </div>
+                    <div class="col-sm-7 text-center">
+                        <img src="logo_kotekan.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="row article">
+                    <div class="col-sm-7 text-center">
+                        <img src="logo_fbz.png" alt="">
+
+                    </div>
+                    <div class="col-sm-5 text-center">
+                        <h2>Compagnie Foulbaz'Art</h2>
+                        <p class="p-section-2">Site de la Compagnie Foulbaz'Art : <br/> les arts du spectacles en milieu rural.</p>
+                        <a class="btn btn-rounded " href="http://www.foulbazart.org" role="button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--SECTION CONTACT----------------->
+
+        <div class="row" id="contact">
+            <h1 class="title-section-3">[Cont4ct]</h1>
+            <!--FORMULAIRE------------------->
+            <div class="row">
+                <div class="col-sm-8">
+                    <form role="form" method="POST">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="nameTXT">Nom</label>
+                                    <input type="text" id="nameTXT" name="nameTXT">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="emailTXT">Email</label>
+                                    <input type="email" id="emailTXT" name="emailTXT">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subjectTXT">Sujet</label>
+                            <input type="text" id="subjectTXT" name="subjectTXT">
+                        </div>
+                        <div class="form-group">
+                            <label for="messageTXT">Message</label>
+                            <textarea cols="36" rows="8" id="messageTXT" name="messageTXT"></textarea>
+                        </div>
+                        <!--BUTTON-->
+                        <button type="submit" class="noir" id="submitBTN" name="submitBTN"><span class="glyphicon glyphicon-send"></span>Envoyer</button>
+                    </form>
+                </div>
+                <div class="col-sm-3 p-section3">
+                    <p>Lorsque mes doigts rencontrent un clavier...<br/> Rien à faire, <br/> ils codent !!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--SECTION RESEAU---------------------->
+        
+        <div class="row" id="reseaux">
+            <h1 class="title-section-2">[Rese4u] </h1>
+            <div class="btn-reseaux">
+                <a href="https://github.com/m4rthiz/"><i class="fa fa-github" style="font-size:106px"></i></a>
+
+                <a href="https://jsfiddle.net/user/m4r/fiddles/"><i class="fa fa-jsfiddle" style="font-size:106px"></i></a>
+                <a href="https://twitter.com/thizm4r"><i class="fa fa-twitter" style="font-size:106px"></i></a>
+                <a href="https://www.freecodecamp.com/m4rthiz"> <i class="fa fa-free-code-camp" style="font-size:106px"></i></a>
+            </div>
+        </div>
+
+        <!--FOOTER------------------------>
+        
+        <div class="footer">
+            <p>Par [m4r] pour freecodecamp (mai 2017)</p>
+        </div>
+    </div>
+</body>
+
+</html>
